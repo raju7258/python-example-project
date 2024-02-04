@@ -61,4 +61,5 @@ def template_response_with_data():
     return render_template('home-w-data.html', template_data=template_data)
 
 if __name__ == '__main__':
-    app.run(**config['app'])
+    app.run(host='0.0.0.0', port=8000, debug=True)
+
