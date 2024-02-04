@@ -18,7 +18,7 @@ app = Flask(__name__)
 # Create a function for fetching data from the database.
 def sql_query(sql):
     # db = mysql.connector.connect(**config['mysql.connector'])
-    db = mysql.connector.connect(user=USER_NAME, password=PASSWORD, host=FQDN, database='web_database_project'
+    db = mysql.connector.connect(user=USER_NAME, password=PASSWORD, host=FQDN, database='web_database_project')
     cursor = db.cursor()
     cursor.execute(sql)
     result = cursor.fetchall()
@@ -28,7 +28,7 @@ def sql_query(sql):
 
 
 def sql_execute(sql):
-    db = mysql.connector.connect(user=USER_NAME, password=PASSWORD, host=FQDN, database='web_database_project'
+    db = mysql.connector.connect(user=USER_NAME, password=PASSWORD, host=FQDN, database='web_database_project')
     # db = mysql.connector.connect(**config['mysql.connector'])
     cursor = db.cursor()
     cursor.execute(sql)
