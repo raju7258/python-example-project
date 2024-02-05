@@ -1,11 +1,11 @@
-import configparser
+# import configparser
 from flask import Flask, render_template, request
 import mysql.connector
 import os
 
 # Read configuration from file.
-config = configparser.ConfigParser()
-config.read('config.ini')
+# config = configparser.ConfigParser()
+# config.read('config.ini')
 
 # Fetch connection credentails to a variable
 USER_NAME = os.environ.get('MYSQLCONNSTR_mysql_server_username')
