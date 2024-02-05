@@ -12,6 +12,10 @@ USER_NAME = os.environ.get('MYSQLCONNSTR_mysql_server_username')
 PASSWORD = os.environ.get('MYSQLCONNSTR_mysql_server_password')
 FQDN = os.environ.get('MYSQLCONNSTR_mysql_server_fqdn')
 
+print(USER_NAME)
+print(PASSWORD)
+print(FQDN)
+
 # Set up application server.
 app = Flask(__name__)
 
